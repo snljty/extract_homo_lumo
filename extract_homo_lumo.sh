@@ -137,8 +137,8 @@ case ${wfntype} in
         echo "${homo}"
         echo "${lumo}"
     else
-        echo "${homo}" 1>${ofl_name}
-        echo "${lumo}" 1>${ofl_name}
+        echo "${homo}" 1> ${ofl_name}
+        echo "${lumo}" 1>> ${ofl_name}
     fi
     unset homo
     unset lumo
@@ -188,8 +188,8 @@ case ${wfntype} in
         echo "${ahomo}        ${bhomo}"
         echo "${alumo}        ${blumo}"
     else
-        echo "${ahomo}        ${bhomo}" 1>${ofl_name}
-        echo "${alumo}        ${blumo}" 1>${ofl_name}
+        echo "${ahomo}        ${bhomo}" 1> ${ofl_name}
+        echo "${alumo}        ${blumo}" 1>> ${ofl_name}
     fi
     unset ahomo
     unset alumo
@@ -232,7 +232,7 @@ case ${wfntype} in
     then
         echo "${somo}"
     else
-        echo "${somo}" 1>${ofl_name}
+        echo "${somo}" 1> ${ofl_name}
     fi
     unset somo
     ;;
